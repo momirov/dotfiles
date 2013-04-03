@@ -29,6 +29,8 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'ervandew/supertab'
 "" Slim template support
 Bundle 'slim-template/vim-slim'
+"" Coffeescript support
+Bundle 'kchmck/vim-coffee-script'
 
 syntax enable
 set encoding=utf-8
