@@ -33,9 +33,10 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'prompt' \
-  'ruby' \
   'git' \
-  'tmux'
+  'tmux' \
+  'ruby' \
+  'history-substring-search'
 
 #
 # Editor
@@ -45,7 +46,7 @@ zstyle ':prezto:load' pmodule \
 zstyle ':prezto:module:editor' keymap 'emacs'
 
 # Auto convert .... to ../..
-zstyle ':prezto:module:editor' dot-expansion 'yes'
+# zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 #
 # Git
@@ -128,3 +129,4 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 # Auto start a session when Zsh is launched.
 zstyle ':prezto:module:tmux' auto-start 'yes'
 
+zstyle ':prezto:module:history-substring-search' color 'yes'
