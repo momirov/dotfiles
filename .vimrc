@@ -23,8 +23,8 @@ Bundle "honza/snipmate-snippets"
 
 "" Snipmate:
 Bundle "garbas/vim-snipmate"
-"" Powerline
-Bundle 'Lokaltog/vim-powerline'
+"" Powerline replacement
+Bundle 'bling/vim-airline'
 "" SuperTab for autocompletion
 Bundle 'ervandew/supertab'
 "" Slim template support
@@ -80,10 +80,10 @@ map <leader>n :call RenameFile()<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ARROW KEYS ARE UNACCEPTABLE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+"map <Left> <Nop>
+"map <Right> <Nop>
+"map <Up> <Nop>
+"map <Down> <Nop>
 
 " unmap Q, Q enters Ex mode
 nnoremap Q <nop>
