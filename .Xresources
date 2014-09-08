@@ -1,0 +1,55 @@
+URxvt*foreground: #CCCCCC
+URxvt*background: #111111
+!black
+*color0: #222222
+*color8: #666666
+!red
+*color1: #E84F4F
+*color9: #D23D3D
+!green
+*color2: #B7CE42
+*color10: #BDE077
+!yellow
+*color3: #FEA63C
+*color11: #FFE863
+!blue
+*color4: #66A9B9
+*color12: #AACCBB
+!magenta
+*color5: #B7416E
+*color13: #E16A98
+!cyan
+*color6: #6D878D
+*color14: #42717B
+!white
+*color7: #CCCCCC
+*color15: #FFFFFF
+
+Xft.autohint: 0
+Xft.lcdfilter: lcdlight
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.dpi: 96
+Xft.rgba: rgb
+
+!URxvt.font:                 xft:Monaco for Powerline:regular:size=9
+!URxvt.imFont:               xft:Monaco for Powerline:regular:size=9
+!URxvt.boldFont:             xft:Monaco for Powerline:bold:size=9
+!URxvt.italicFont:           xft:Monaco for Powerline:italic:size=9
+!URxvt.boldItalicFont:       xft:Monaco for Powerline:bold:italic:size=9
+!URxvt.perl-ext-common: default,clipboard
+! enable letter space in case you want to you use xft fonts
+!URxvt.letterSpace : -2
+!URxvt.font : xft:Source Code Pro:regular:pixelsize=13,xft:AR PL UKai CN:regular:pixelsize=16
+!URxvt.boldFont : xft:Source Code Pro:bold:pixelsize=13,xft:AR PL UKai CN:bold:pixelsize=16
+!URxvt.font : xft:Ubuntu Mono:regular:pixelsize=13,xft:AR PL UKai CN:regular:pixelsize=16
+!URxvt.boldFont : xft:Ubuntu Mono:bold:pixelsize=13,xft:AR PL UKai CN:bold:pixelsize=16
+!URxvt.font : -windows-dina-medium-r-normal-*-13-*-*-*-c-*-iso8859-1,-misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-1,xft:AR PL UKai CN:regular:pixelsize=16
+!URxvt.boldFont : -windows-dina-bold-r-normal-*-13-*-*-*-c-*-iso8859-1,-misc-fixed-bold-r-normal-*-15-*-*-*-*-*-iso10646-1,xft:AR PL UKai CN:bold:pixelsize=16
+URxvt.font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
+URxvt.boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+URxvt.scrollBar : false
+URxvt.perl-ext-common:  default,matcher
+URxvt.urlLauncher:      /usr/bin/google-chrome
+URxvt.matcher.button:   1
