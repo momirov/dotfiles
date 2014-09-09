@@ -38,7 +38,6 @@ Xft.rgba: rgb
 !URxvt.boldFont:             xft:Monaco for Powerline:bold:size=9
 !URxvt.italicFont:           xft:Monaco for Powerline:italic:size=9
 !URxvt.boldItalicFont:       xft:Monaco for Powerline:bold:italic:size=9
-!URxvt.perl-ext-common: default,clipboard
 ! enable letter space in case you want to you use xft fonts
 !URxvt.letterSpace : -2
 !URxvt.font : xft:Source Code Pro:regular:pixelsize=13,xft:AR PL UKai CN:regular:pixelsize=16
@@ -50,6 +49,11 @@ Xft.rgba: rgb
 URxvt.font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt.boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
 URxvt.scrollBar : false
-URxvt.perl-ext-common:  default,matcher
-URxvt.urlLauncher:      /usr/bin/google-chrome
-URxvt.matcher.button:   1
+
+URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
+URxvt.url-select.launcher:  firefox
+URxvt.url-select.underline: true
+URxvt.keysym.M-u:           perl:url-select:select_next
+URxvt.keysym.M-Escape:      perl:keyboard-select:activate
+URxvt.keysym.M-s:           perl:keyboard-select:search
+
