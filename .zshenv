@@ -72,3 +72,7 @@ if [[ -d "$TMPDIR" ]]; then
   fi
 fi
 
+export GOROOT='/usr/lib/go'
+export GOPATH=~/Projects/go
+export PATH=$PATH:~/Projects/go/bin
+export GOWORKSPACE=$GOPATH/src/bitbucket.org/momirov
