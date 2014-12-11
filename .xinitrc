@@ -19,4 +19,4 @@ setxkbmap -option 'grp:ctrl_alt_toggle'
 #autocutsel -selection PRIMARY -fork &
 /usr/bin/xcalib -d :0 /usr/share/color/icc/dell_u2412m_user5.icm
 /usr/bin/xcalib -d :1 /usr/share/color/icc/dell_u2412m_user5.icm
-exec i3
+exec i3-gnome
