@@ -2,36 +2,29 @@ set nocompatible                " choose no compatibility with legacy vi
 filetype off                    " required for vundle!
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " let Vundle manage Vundle
 " required! 
-Bundle 'gmarik/vundle'
-
+Plugin 'gmarik/vundle'
 " CtrlP
-Bundle 'kien/ctrlp.vim'
-
+Plugin 'kien/ctrlp.vim'
 " Ack file search
-Bundle 'mileszs/ack.vim'
-
+Plugin 'mileszs/ack.vim'
 " ruby development
-Bundle 'vim-ruby/vim-ruby'
-"" Snipmante dependencies:
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-
-"" Snipmate:
-Bundle "garbas/vim-snipmate"
+Plugin 'vim-ruby/vim-ruby'
 "" Powerline replacement
-Bundle 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 "" SuperTab for autocompletion
-Bundle 'ervandew/supertab'
+Plugin 'ervandew/supertab'
 "" Slim template support
-Bundle 'slim-template/vim-slim'
+Plugin 'slim-template/vim-slim'
 "" Coffeescript support
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
+"" Improved javascript support
+Plugin 'pangloss/vim-javascript'
 
+call vundle#end() 
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
@@ -49,9 +42,10 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-color wombat256 " set color scheme
+color distinguished  " set color scheme
+set background=dark
 set number " show line numbers
-set colorcolumn=85 " ruler
+set colorcolumn=80 " ruler
 highlight ColorColumn ctermbg=DarkGray " change color of the ruler
 
 set nobackup " disable swapping
@@ -62,7 +56,7 @@ set listchars=tab:>-,trail:-
 set list
 
 " remove trailing white space on save
-autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml} :%s/\s\+$//e
+autocmd BufWritePre {*.rb,*.js,*.coffee,*.scss,*.haml,*.html,*.php} :%s/\s\+$//e
 
 " RENAME CURRENT FILE
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -88,8 +82,7 @@ map <leader>n :call RenameFile()<cr>
 " unmap Q, Q enters Ex mode
 nnoremap Q <nop>
 
-"" Powerline config
-set laststatus=2
-set encoding=utf-8
 set t_Co=256
-let g:Powerline_symbols = 'fancy'
+" Airline config
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
