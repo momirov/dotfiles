@@ -1,6 +1,3 @@
-set nocompatible                " choose no compatibility with legacy vi
-filetype off                    " required for vundle!
-
 set rtp+=~/.vim/bundle/vundle/
 call vundle#begin()
 
@@ -86,3 +83,7 @@ set t_Co=256
 " Airline config
 let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
+set encoding=utf-8
+
+" Ignore node_modules in ctrlp
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
