@@ -33,21 +33,10 @@ Xft.antialias: 1
 Xft.dpi: 96
 Xft.rgba: rgb
 
-!URxvt.font:                 xft:Monaco for Powerline:regular:size=9
-!URxvt.imFont:               xft:Monaco for Powerline:regular:size=9
-!URxvt.boldFont:             xft:Monaco for Powerline:bold:size=9
-!URxvt.italicFont:           xft:Monaco for Powerline:italic:size=9
-!URxvt.boldItalicFont:       xft:Monaco for Powerline:bold:italic:size=9
-! enable letter space in case you want to you use xft fonts
-!URxvt.letterSpace : -2
-!URxvt.font : xft:Source Code Pro:regular:pixelsize=13,xft:AR PL UKai CN:regular:pixelsize=16
-!URxvt.boldFont : xft:Source Code Pro:bold:pixelsize=13,xft:AR PL UKai CN:bold:pixelsize=16
-!URxvt.font : xft:Ubuntu Mono:regular:pixelsize=13,xft:AR PL UKai CN:regular:pixelsize=16
-!URxvt.boldFont : xft:Ubuntu Mono:bold:pixelsize=13,xft:AR PL UKai CN:bold:pixelsize=16
-!URxvt.font : -windows-dina-medium-r-normal-*-13-*-*-*-c-*-iso8859-1,-misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-1,xft:AR PL UKai CN:regular:pixelsize=16
-!URxvt.boldFont : -windows-dina-bold-r-normal-*-13-*-*-*-c-*-iso8859-1,-misc-fixed-bold-r-normal-*-15-*-*-*-*-*-iso10646-1,xft:AR PL UKai CN:bold:pixelsize=16
+! This is working terminus font
 URxvt.font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt.boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
+
 URxvt.scrollBar : false
 
 URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
