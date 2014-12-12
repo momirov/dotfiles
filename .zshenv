@@ -10,15 +10,15 @@
 #
 
 if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
+  export BROWSER='google-chrome'
 fi
 
 #
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='vim'
+export VISUAL='gvim'
 export PAGER='less'
 
 #
