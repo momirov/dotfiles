@@ -20,6 +20,10 @@ Plugin 'slim-template/vim-slim'
 Plugin 'kchmck/vim-coffee-script'
 "" Improved javascript support
 Plugin 'pangloss/vim-javascript'
+"" Snippets plugin
+Plugin 'SirVer/ultisnips'
+"" Autocomplete
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end() 
 syntax enable
@@ -87,3 +91,23 @@ set encoding=utf-8
 
 " Ignore node_modules in ctrlp
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
+" Change snippets directory so we can commit them
+let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips/'
+
+let g:UltiSnipsExpandTrigger = '<C-@>'   " terminals send C-@ when C-Space is pressed.
+let g:UltiSnipsJumpForwardTrigger = '<C-%>' " some key I do not use at all
+let g:UltiSnipsSnippetDirectories  = ["UltiSnips"]
+
+function! g:UltiSnips_Complete()
+    call UltiSnips#ExpandSnippet()
+    if g:ulti_expand_res == 0
+        call UltiSnips#JumpForwards()
+        if g:ulti_jump_forwards_res == 0
+           return ""  " nothing more to do
+        endif
+    endif
+    return ""
+endfunction
+
+au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
