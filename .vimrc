@@ -8,22 +8,25 @@ Plugin 'gmarik/vundle'
 Plugin 'kien/ctrlp.vim'
 " Ack file search
 Plugin 'mileszs/ack.vim'
-" ruby development
-Plugin 'vim-ruby/vim-ruby'
 "" Powerline replacement
 Plugin 'bling/vim-airline'
 "" SuperTab for autocompletion
 Plugin 'ervandew/supertab'
-"" Slim template support
-Plugin 'slim-template/vim-slim'
-"" Coffeescript support
-Plugin 'kchmck/vim-coffee-script'
 "" Improved javascript support
+Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 "" Snippets plugin
 Plugin 'SirVer/ultisnips'
 "" Autocomplete
 Plugin 'Valloric/YouCompleteMe'
+"" Brackets autoclosing
+Plugin 'Raimondi/delimitMate'
+
+Plugin 'moll/vim-node'
+Plugin 'ternjs/tern_for_vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'othree/html5.vim'
+Plugin 'honza/vim-snippets'
 
 call vundle#end() 
 syntax enable
@@ -43,8 +46,8 @@ set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
-color distinguished  " set color scheme
 set background=dark
+color badwolf  " set color scheme
 set number " show line numbers
 set colorcolumn=80 " ruler
 highlight ColorColumn ctermbg=DarkGray " change color of the ruler
@@ -111,3 +114,10 @@ function! g:UltiSnips_Complete()
 endfunction
 
 au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+
+"" Edit vimrc and reload vimrc
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
+
+"" Delimitmate expand enter
+let delimitMate_expand_cr = 1
