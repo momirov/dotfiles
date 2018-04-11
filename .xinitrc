@@ -21,7 +21,7 @@ fi
 xsetroot -solid "#333333"
 
 # turn off caps
-setxkbmap -option ctrl:nocaps
+setxkbmap -option caps:escape
 
 # add keyboard layouts
 setxkbmap -layout 'us,rs(latinyz)'
@@ -32,6 +32,7 @@ setxkbmap -option 'grp:ctrl_alt_toggle'
 
 # apply color profile
 dispwin -d 1 ~/Downloads/dell_u2412m_custom.icc                                                                                                                                                                                                                                                            ⏎ master ✱ ◼
-dispwin -d 2 ~/Downloads/dell_u2412m_custom.icc 
+dispwin -d 2 ~/Downloads/dell_u2412m_custom.icc
 
-exec i3-gnome
+exec i3
+#exec cinnamon

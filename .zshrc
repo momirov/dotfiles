@@ -12,4 +12,7 @@ fi
 
 # Customize to your needs...
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-alias ssh="TERM=xterm ssh" 
+alias ssh="TERM=rxvt-unicode ssh"
+source /etc/profile.d/vte.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
