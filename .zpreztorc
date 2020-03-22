@@ -38,7 +38,8 @@ zstyle ':prezto:load' pmodule \
   'ruby' \
   'history-substring-search' \
   'archive' \
-  'fasd'
+  'fasd' \
+  'node'
 
 #
 # Editor

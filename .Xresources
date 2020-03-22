@@ -1,5 +1,5 @@
 URxvt*foreground: #CCCCCC
-URxvt*background: #111111
+URxvt*background: #000000
 !black
 *color0: #222222
 *color8: #666666
@@ -25,18 +25,42 @@ URxvt*background: #111111
 *color7: #CCCCCC
 *color15: #FFFFFF
 
-Xft.autohint: 0
-Xft.lcdfilter: lcdlight
-Xft.hintstyle: hintfull
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.dpi: 96
-Xft.rgba: rgb
+!Xft.autohint: 0
+!Xft.lcdfilter: lcdlight
+!Xft.hintstyle: hintfull
+!Xft.hinting: 1
+!Xft.antialias: 1
+!Xft.dpi: 96
+!Xft.rgba: rgb
 
-! This is working terminus font
+! Fonts {{{
+Xft.antialias: true
+Xft.hinting:   true
+Xft.rgba:      rgb
+Xft.hintstyle: hintfull
+Xft.dpi:       96
+! }}}
+
+!URxvt.font:                 xft:Monaco for Powerline:regular:size=9
+!URxvt.imFont:               xft:Monaco for Powerline:regular:size=9
+!URxvt.boldFont:             xft:Monaco for Powerline:bold:size=9
+!URxvt.italicFont:           xft:Monaco for Powerline:italic:size=9
+!URxvt.boldItalicFont:       xft:Monaco for Powerline:bold:italic:size=9
+! enable letter space in case you want to you use xft fonts
+!URxvt.letterSpace : -2
+!URxvt.font : xft:Source Code Pro:regular:pixelsize=13,xft:AR PL UKai CN:regular:pixelsize=16
+!URxvt.boldFont : xft:Source Code Pro:bold:pixelsize=13,xft:AR PL UKai CN:bold:pixelsize=16
+!URxvt.font : xft:Ubuntu Mono:regular:pixelsize=13,xft:AR PL UKai CN:regular:pixelsize=16
+!URxvt.boldFont : xft:Ubuntu Mono:bold:pixelsize=13,xft:AR PL UKai CN:bold:pixelsize=16
+!URxvt.font : -windows-dina-medium-r-normal-*-13-*-*-*-c-*-iso8859-1,-misc-fixed-medium-r-normal-*-15-*-*-*-*-*-iso10646-1,xft:AR PL UKai CN:regular:pixelsize=16
+!URxvt.boldFont : -windows-dina-bold-r-normal-*-13-*-*-*-c-*-iso8859-1,-misc-fixed-bold-r-normal-*-15-*-*-*-*-*-iso10646-1,xft:AR PL UKai CN:bold:pixelsize=16
 URxvt.font:        -xos4-terminus-medium-*-*-*-12-*-*-*-*-*-*-*
 URxvt.boldFont:    -xos4-terminus-bold-*-*-*-12-*-*-*-*-*-*-*
-
+!URxvt.font: xft:Terminus:pixelsize=12
+!URxvt.font: xft:Iosevka Term:regular:size=12
+!URxvt.boldFont: xft:Iosevka Term:bold:size=12
+!URxvt.italicFont: xft:Iosevka Term:italic:size=12
+!*.boldFont: xft:iosevka:bold:pixelsize=16
 URxvt.scrollBar : false
 
 URxvt.perl-ext-common:      default,clipboard,url-select,keyboard-select
@@ -47,3 +71,6 @@ URxvt.keysym.M-Escape:      perl:keyboard-select:activate
 URxvt.keysym.M-s:           perl:keyboard-select:search
 
 URxvt.saveLines: 12000
+URxvt.letterSpace: 1
+
+rofi.dpi: 96

@@ -12,3 +12,8 @@ fi
 
 # Customize to your needs...
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export LIBVA_DRIVER_NAME=vdpau
+export VDPAU_DRIVER=r600
+PATH="/usr/local/heroku/bin:$PATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
