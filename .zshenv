@@ -79,3 +79,4 @@ export GOWORKSPACE=$GOPATH/src/bitbucket.org/momirov
 export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!.git/*"'
 alias goapi='cd ~/Projects/squire-api'
 alias goapp='cd ~/Projects/squire-app'
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
