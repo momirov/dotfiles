@@ -18,7 +18,7 @@ fi
 xsetroot -solid "#333333"
 
 # turn off caps
-setxkbmap -option ctrl:nocaps
+setxkbmap -option caps:escape
 
 # add keyboard layouts
 setxkbmap -layout 'us,rs(latinyz)'

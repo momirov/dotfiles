@@ -39,7 +39,8 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'archive' \
   'fasd' \
-  'node'
+  'node' \
+  'autosuggestions'
 
 #
 # Editor
@@ -70,7 +71,7 @@ zstyle ':prezto:module:editor' keymap 'vi'
 #
 
 # Set the Pacman frontend.
-zstyle ':prezto:module:pacman' frontend 'yaourt'
+zstyle ':prezto:module:pacman' frontend 'yay'
 
 #
 # Prompt
@@ -79,7 +80,7 @@ zstyle ':prezto:module:pacman' frontend 'yaourt'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'pure'
 
 #
 # Screen
@@ -133,3 +134,4 @@ zstyle ':prezto:module:terminal' auto-title 'yes'
 #zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 zstyle ':prezto:module:history-substring-search' color 'yes'
+zstyle ':prezto:module:node:info:version' format 'version:%v'
