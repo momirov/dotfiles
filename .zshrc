@@ -18,3 +18,8 @@ PATH="/usr/local/heroku/bin:$PATH"
 PATH="/home/vladimir/.local/bin:$PATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# MGM-Hurry shell alias
+mgm-hurry() { pushd /home/vladimir/Projects/crypto/mgm/Freqtrade-MGM &> /dev/null; python3 -m pipenv run python3 ./mgm-hurry $@; popd &> /dev/null; }
+
+eval "$(fnm env --use-on-cd)"
