@@ -23,3 +23,7 @@ PATH="/home/vladimir/.local/bin:$PATH"
 mgm-hurry() { pushd /home/vladimir/Projects/crypto/mgm/Freqtrade-MGM &> /dev/null; python3 -m pipenv run python3 ./mgm-hurry $@; popd &> /dev/null; }
 
 eval "$(fnm env --use-on-cd)"
+
+alias squire-connect="openvpn3 session-start --config ~/Downloads/office-linux_vladm@getsquire_com@getsquire.openvpn.com_\[Frankfurt\].ovpn"
+alias squire-disconnect="openvpn3 session-manage --config ~/Downloads/office-linux_vladm@getsquire_com@getsquire.openvpn.com_\[Frankfurt\].ovpn --disconnect"
+alias squire-restart="openvpn3 session-manage --config ~/Downloads/office-linux_vladm@getsquire_com@getsquire.openvpn.com_\[Frankfurt\].ovpn --restart"

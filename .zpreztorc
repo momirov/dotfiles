@@ -40,7 +40,8 @@ zstyle ':prezto:load' pmodule \
   'archive' \
   'fasd' \
   'node' \
-  'autosuggestions'
+  'autosuggestions' \
+  'docker'
 
 #
 # Editor
